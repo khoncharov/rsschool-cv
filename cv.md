@@ -16,10 +16,41 @@ Currently I'm studying on Front-end courses. For me frontend is an opportunity t
 
 ## Skills
 
+- CAD, CAE software
+- Delphi (Basic)
+- C (Basic)
+- Python (Basic)
+- SQL (Basic)
+- HTML, CSS, JS (Basic)
+- React, Redux, Webpack (Basic)
+
 ## Code Example
+
+Count characters in your string. \
+If you have a string like _aba_, then the result should be _{'a': 2, 'b': 1}_.
+
+```
+function count(string) {
+  return string.split('').reduce((res, item) => {
+      res[item] ? res[item]++ : res[item] = 1
+      return res
+    }, {})
+}
+```
 
 ## Experience
 
+- Minsk Automobile Plant JSC, Electronics department, Design engineer (2007-2014) (full time job)
+- Zoomlion (two projects, remote job)
+- MAZSportAUTO (one project, remote job)
+
 ## Education
 
+- **University:** Belarusian-Russian University, Automotive Design, Mechanical Engineer
+- **System manufacturers courses:** ABS, ESC, EBS, ECAS systems (companies: Wabco, Knorr-Bremse)
+- **Language courses:** Streamline B1, B2, C1, IELT (2011-2015)
+- **IT courses:** Intro to IT course (LeverX 2021), Front-end Programming course (LeverX 2021)
+
 ## English
+
+B1+
