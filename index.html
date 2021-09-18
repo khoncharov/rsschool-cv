@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honcharov CV RSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main class="cv-container">
+      <!-- CV content -->
+      <div class="cv-content-container">
+        <h2>Konstantin Honcharov</h2>
+
+        <h3>About myself</h3>
+        <hr />
+        <p>
+          For 14 years I worked as a commercial vehicle design engeneer at OJSC MAZ. My
+          domain was active safety systems, electronic air suspension system and objective
+          control systems. During my career I participated in application of ABS ESP EBS
+          systems, developed requirements for objective control systems (like dashboard),
+          developed software for collecting and analyzing data from vehicle on-board
+          systems, developed software for prototyping future functionality. I gained
+          experience in the development of complex products from technical specifications
+          to production, testing and support.
+        </p>
+        <p>
+          Currently I’m studying on Front-end courses. For me frontend is an opportunity
+          to change my profession and expand my capabilities as an engineer.
+        </p>
+
+        <h3>Education</h3>
+        <hr />
+        <ul>
+          <li>
+            <b>University:</b> Belarusian-Russian University, Automotive Design,
+            Mechanical engineer <span class="additional-info">(2002-2007)</span>
+          </li>
+          <li>
+            <b>System manufacturers courses:</b> ABS, ESC, EBS, ECAS systems
+            <span class="additional-info">(companies: Wabco, Knorr-Bremse)</span>
+          </li>
+          <li>
+            <b>Language courses:</b> Streamline B1, B2, C1, IELT
+            <span class="additional-info">(2011-2015)</span>
+          </li>
+          <li>
+            <b>IT courses:</b> Intro to IT course
+            <span class="additional-info">(LeverX 2021)</span>, Front-end Programming
+            course <span class="additional-info">(LeverX 2021)</span>
+          </li>
+        </ul>
+
+        <h3>Experience</h3>
+        <hr />
+        <ul>
+          <li>
+            OJSC Minsk Automobile Plant , Electronics department, Design engineer
+            <span class="additional-info">(2007-2014, full time job)</span>
+          </li>
+          <li>
+            OOO Zoomlion-MAZ, Automotive design
+            <span class="additional-info">(two projects, remote job)</span>
+          </li>
+          <li>
+            MAZSportAUTO, Automotive design
+            <span class="additional-info">(one project, remote job)</span>
+          </li>
+        </ul>
+
+        <h3>Code Example</h3>
+        <hr />
+        <p>
+          Count characters in a string. If you have a string like <kbd>aba</kbd>, then the
+          result should be <kbd>{'a': 2, 'b': 1}</kbd>.
+        </p>
+        <div class="code-container">
+          <pre>
+function count(string) {
+  return string.split('').reduce((res, item) => {
+    res[item] ? res[item]++ : res[item] = 1 return res
+  }, {})
+}
+          </pre>
+        </div>
+      </div>
+      <!-- Side column, additional info -->
+      <div class="cv-side-column">
+        <img
+          class="profile-photo"
+          src="./images/profile-photo-320px-f.png"
+          alt="Profile photo"
+        />
+        <h3>Summary</h3>
+        <hr />
+        <ul>
+          <li>
+            Mechanical engineer<br /><span class="additional-info"
+              >(Automotive design)</span
+            >
+          </li>
+          <li>Frontend developer<br /><span class="additional-info">(Beginner)</span></li>
+        </ul>
+
+        <h3>Contacts</h3>
+        <hr />
+        <ul>
+          <li>Location: Minsk, Belarus</li>
+          <li>Phone: +375 29 303-28-22</li>
+          <li>
+            Email:
+            <a class="contacts-link" href="mailto:k.honcharov@gmail.com"
+              >k.honcharov@gmail.com</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a
+              class="contacts-link"
+              href="http://github.com/khoncharov"
+              target="_blank"
+              rel="noreferrer noopener"
+              >khoncharov</a
+            >
+          </li>
+        </ul>
+
+        <h3>Skills</h3>
+        <hr />
+        <ul>
+          <li>CAD, CAE software</li>
+          <li>Delphi <span class="additional-info">(Basic)</span></li>
+          <li>C <span class="additional-info">(Basic)</span></li>
+          <li>Python <span class="additional-info">(Basic)</span></li>
+          <li>SQL <span class="additional-info">(Basic)</span></li>
+          <li>HTML, CSS, JS <span class="additional-info">(Basic)</span></li>
+          <li>React, Redux, Webpack <span class="additional-info">(Basic)</span></li>
+        </ul>
+
+        <h3>Languages</h3>
+        <hr />
+        <ul>
+          <li>Russian (native)</li>
+          <li>English (B1+)</li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <a
+        class="github-link"
+        href="http://github.com/khoncharov"
+        target="_blank"
+        rel="noreferrer noopener"
+        ><img class="gh-logo" src="./images/github-mark-64px.png" alt="github-logo"
+      /></a>
+
+      <a
+        class="rss-link"
+        href="https://rs.school/js/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <img class="rss-logo" src="./images/rs_school_js.svg" alt="rss-logo" />
+      </a>
+      <p class="creation-year" title="CV creation year">2021</p>
+    </footer>
+  </body>
+</html>

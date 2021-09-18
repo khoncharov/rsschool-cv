@@ -1,0 +1,151 @@
+/* General setup */
+
+:root {
+  /* Primary */
+  --primary-blue: #1b88db;
+  --primary-yellow: #fff7cd;
+  --primary-pink: #ff6392;
+  /* Text */
+  --text-dark: #333e47;
+  --text-light: #5c646d;
+  --text-light2: #9caab9;
+  --text-black: #333333;
+  --text-white: #fafafa;
+  /* Background */
+  --background-light: #e6e6e6;
+  --background-white: #ffffff;
+  --background-dark-blue: #8ea1b1;
+  /* Support */
+  --support-shadow: #143b7a26;
+
+  /* Font */
+  --font-stack: "Open Sans", sans-serif;
+}
+
+html {
+  font-family: var(--font-stack);
+  font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  padding: 20px 0;
+}
+
+h3 {
+  margin-top: 24px;
+  color: var(--primary-blue);
+}
+
+hr {
+  background-color: var(--primary-pink);
+  opacity: 0.3;
+  height: 2px;
+  border: none;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding: 0;
+}
+
+p {
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 28px;
+}
+
+ul {
+  margin-top: 10px;
+  line-height: 28px;
+  margin-left: 14px;
+}
+
+/* CV containers */
+
+.cv-container {
+  margin: 0 auto;
+  width: 1024px;
+  height: auto;
+  background-color: var(--background-white);
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  font-size: 1.8rem;
+  color: var(--text-black);
+}
+
+/* CV content */
+
+.cv-content-container {
+  padding: 50px 30px 50px 70px;
+}
+
+.code-container {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--text-light);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px 0 0 10px;
+  background-color: var(--background-light);
+}
+
+.additional-info {
+  color: var(--text-light2);
+}
+
+/* CV side column */
+
+.cv-side-column {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px 50px 30px;
+  background-color: var(--primary-yellow);
+}
+
+.profile-photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 45px;
+  margin-bottom: 10px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: var(--primary-pink);
+}
+
+/* Footer */
+
+.footer {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin: 0 auto;
+  padding: 25px 50px;
+  width: 1024px;
+  height: 100px;
+  background-color: var(--background-dark-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gh-logo,
+.rss-logo {
+  height: 50px;
+}
+
+.creation-year {
+  margin: 0;
+}
