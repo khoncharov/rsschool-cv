@@ -3,18 +3,18 @@
 :root {
   /* Primary */
   --primary-blue: #1b88db;
-  --primary-light-blue: #7fc8f8;
-  --primary-yellow: #fff3b6;
+  --primary-yellow: #fff7cd;
   --primary-pink: #ff6392;
   /* Text */
   --text-dark: #333e47;
   --text-light: #5c646d;
+  --text-light2: #9caab9;
   --text-black: #333333;
   --text-white: #fafafa;
   /* Background */
   --background-light: #f9f9f9;
   --background-white: #ffffff;
-  --background-dark-blue: #708596;
+  --background-dark-blue: #8ea1b1;
   /* Support */
   --support-shadow: #143b7a26;
 
@@ -65,6 +65,7 @@ p {
 ul {
   margin-top: 10px;
   line-height: 28px;
+  margin-left: 14px;
 }
 
 /* CV containers */
@@ -84,7 +85,7 @@ ul {
 /* CV content */
 
 .cv-content-container {
-  padding: 50px 25px 50px 70px;
+  padding: 50px 30px 50px 70px;
 }
 
 .code-container {
@@ -98,12 +99,16 @@ ul {
   background-color: var(--background-light);
 }
 
+.additional-info {
+  color: var(--text-light2);
+}
+
 /* CV side column */
 
 .cv-side-column {
   display: flex;
   flex-direction: column;
-  padding: 50px 70px 50px 25px;
+  padding: 50px 70px 50px 30px;
   background-color: var(--primary-yellow);
 }
 
@@ -111,7 +116,13 @@ ul {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-left: 45px;
+  margin-bottom: 10px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: var(--primary-pink);
 }
 
 /* Footer */
@@ -135,4 +146,8 @@ ul {
 .gh-logo,
 .rss-logo {
   height: 50px;
+}
+
+.creation-year {
+  margin: 0;
 }
