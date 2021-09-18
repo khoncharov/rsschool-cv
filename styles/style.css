@@ -12,7 +12,7 @@
   --text-black: #333333;
   --text-white: #fafafa;
   /* Background */
-  --background-light: #f9f9f9;
+  --background-light: #e6e6e6;
   --background-white: #ffffff;
   --background-dark-blue: #8ea1b1;
   /* Support */
@@ -75,7 +75,6 @@ ul {
   width: 1024px;
   height: auto;
   background-color: var(--background-white);
-  box-shadow: 0px 1px 5px 2px var(--support-shadow);
   display: grid;
   grid-template-columns: 5fr 3fr;
   font-size: 1.8rem;
@@ -90,7 +89,7 @@ ul {
 
 .code-container {
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   color: var(--text-light);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -136,7 +135,6 @@ ul {
   width: 1024px;
   height: 100px;
   background-color: var(--background-dark-blue);
-  box-shadow: 0px 1px 5px 2px var(--support-shadow);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
