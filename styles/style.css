@@ -72,7 +72,7 @@ ul {
 
 .cv-container {
   margin: 0 auto;
-  width: 1024px;
+  max-width: 1100px;
   height: auto;
   background-color: var(--background-white);
   display: grid;
@@ -127,7 +127,7 @@ ul {
   color: var(--text-white);
   margin: 0 auto;
   padding: 25px 50px;
-  width: 1024px;
+  max-width: 1100px;
   height: 100px;
   background-color: var(--background-dark-blue);
   display: flex;
