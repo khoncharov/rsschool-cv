@@ -11,6 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -82,13 +90,13 @@
           result should be <kbd>{'a': 2, 'b': 1}</kbd>.
         </p>
         <div class="code-container">
-          <pre>
+          <pre><code class="language-js">
 function count(string) {
   return string.split('').reduce((res, item) => {
     res[item] ? res[item]++ : res[item] = 1 return res
   }, {})
 }
-          </pre>
+          </code></pre>
         </div>
       </div>
       <!-- Side column, additional info -->

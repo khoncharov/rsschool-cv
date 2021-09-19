@@ -91,11 +91,6 @@ ul {
   margin-top: 10px;
   font-weight: 500;
   font-size: 1.6rem;
-  color: var(--text-light);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 10px 0 0 10px;
-  background-color: var(--background-light);
 }
 
 .additional-info {
