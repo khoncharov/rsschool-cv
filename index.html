@@ -19,13 +19,16 @@
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <main class="cv-container">
-      <section class="cv-content-container">
-        <h2>Konstantin Honcharov</h2>
+      <!-- <section class="cv-content-container"> -->
+      <article class="grid-fullname">
+        <h1>Konstantin Honcharov</h1>
+      </article>
 
+      <article class="grid-about">
         <h3>About myself</h3>
         <hr />
         <p>
@@ -42,7 +45,9 @@
           Currently I’m studying on Front-end courses. For me frontend is an opportunity
           to change my profession and expand my capabilities as an engineer.
         </p>
+      </article>
 
+      <article class="grid-education">
         <h3>Education</h3>
         <hr />
         <ul>
@@ -64,7 +69,9 @@
             course <span class="additional-info">(LeverX 2021)</span>
           </li>
         </ul>
+      </article>
 
+      <article class="grid-experience">
         <h3>Experience</h3>
         <hr />
         <ul>
@@ -81,7 +88,9 @@
             <span class="additional-info">(one project, remote job)</span>
           </li>
         </ul>
+      </article>
 
+      <article class="grid-code">
         <h3>Code Example</h3>
         <hr />
         <p>
@@ -96,16 +105,21 @@ function count(string) {
     return res
   }, {})
 }
-          </code></pre>
+            </code></pre>
         </div>
-      </section>
+      </article>
+      <!-- </section> -->
 
-      <section class="cv-side-column">
+      <!-- <section class="cv-side-column"> -->
+      <article class="grid-photo">
         <img
           class="profile-photo"
           src="./images/profile-photo-320px-f.png"
           alt="Profile photo"
         />
+      </article>
+
+      <article class="grid-summary">
         <h3>Summary</h3>
         <hr />
         <ul>
@@ -116,7 +130,9 @@ function count(string) {
           </li>
           <li>Frontend developer<br /><span class="additional-info">(Beginner)</span></li>
         </ul>
+      </article>
 
+      <article class="grid-contacts">
         <h3>Contacts</h3>
         <hr />
         <ul>
@@ -139,7 +155,9 @@ function count(string) {
             >
           </li>
         </ul>
+      </article>
 
+      <article class="grid-skills">
         <h3>Skills</h3>
         <hr />
         <ul>
@@ -151,14 +169,18 @@ function count(string) {
           <li>HTML, CSS, JS <span class="additional-info">(Basic)</span></li>
           <li>React, Redux, Webpack <span class="additional-info">(Basic)</span></li>
         </ul>
+      </article>
 
+      <article class="grid-lang">
         <h3>Languages</h3>
         <hr />
         <ul>
           <li>Russian (native)</li>
           <li>English (B1+)</li>
         </ul>
-      </section>
+      </article>
+      <div class="grid-background"></div>
+      <!-- </section> -->
     </main>
     <footer class="footer">
       <a
