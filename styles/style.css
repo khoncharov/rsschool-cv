@@ -8,13 +8,14 @@
   /* Text */
   --text-dark: #333e47;
   --text-light: #5c646d;
-  --text-light2: #9caab9;
+  --text-light2: #9198a0;
+  --text-light3: #b2bac4;
   --text-black: #333333;
   --text-white: #fafafa;
   /* Background */
   --background-light: #e6e6e6;
   --background-white: #ffffff;
-  --background-dark-blue: #8ea1b1;
+  --background-dark-blue: #315570;
   /* Support */
   --support-shadow: #143b7a26;
 
@@ -77,12 +78,17 @@ ul {
 
 /* Menu btn */
 .menu-btn-container {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  left: 10px;
+  right: 10px;
   cursor: pointer;
   padding-left: 6px;
   height: 40px;
+  z-index: 1;
+  background-color: var(--primary-yellow);
+  padding-right: 5px;
+  border-radius: 6px;
+  opacity: 0.7;
 }
 
 .bar1,
@@ -90,9 +96,10 @@ ul {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: var(--text-black);
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 3px;
 }
 
 .change .bar1 {
@@ -122,6 +129,8 @@ ul {
   padding-top: 20px;
 }
 
+/* Wide screen menu */
+
 .menu-list {
   list-style: none;
   display: flex;
@@ -133,11 +142,47 @@ ul {
 
 .menu-link {
   text-decoration: none;
-  color: inherit;
+  color: var(--text-light3);
 }
 
 .menu-link:hover {
   color: var(--primary-yellow);
+}
+
+/* Side menu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: var(--text-black);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--text-light2);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--primary-yellow);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* CV content */
@@ -210,6 +255,10 @@ ul {
 @media screen and (min-width: 960px) {
   /* Menu btn */
   .menu-btn-container {
+    display: none;
+  }
+
+  .sidenav {
     display: none;
   }
 
@@ -466,5 +515,9 @@ ul {
 
   .profile-photo {
     margin-top: 0px;
+  }
+
+  #id-hide-code {
+    display: none;
   }
 }
