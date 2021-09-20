@@ -52,9 +52,7 @@
         <a class="mob-menu-link" href="#id-skills">Skills</a>
         <a class="mob-menu-link" href="#id-contacts">Contacts</a>
         <a class="mob-menu-link" href="#id-languages">Languages</a>
-        <a class="mob-menu-link" href="#id-code-example" id="id-hide-code">
-          Code&nbsp;example
-        </a>
+        <a class="mob-menu-link" href="#id-code-example"> Code&nbsp;example </a>
       </div>
       <!-- Content -->
       <article class="grid-fullname">
@@ -131,6 +129,7 @@
           result should be <kbd>{'a': 2, 'b': 1}</kbd>.
         </p>
         <div class="code-container">
+          <!-- lib: "highlight.js" -->
           <pre><code class="language-js">
 function count(string) {
   return string.split('').reduce((res, item) => {
@@ -142,13 +141,13 @@ function count(string) {
         </div>
       </article>
 
-      <article class="grid-photo">
+      <figure class="grid-photo">
         <img
           class="profile-photo"
           src="./images/profile-photo-320px-f.png"
           alt="Profile photo"
         />
-      </article>
+      </figure>
 
       <article class="grid-summary">
         <h3 id="id-summary">Summary</h3>
@@ -231,6 +230,6 @@ function count(string) {
       </a>
       <p class="creation-year" title="CV creation year">2021</p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
-  <script src="./js/index.js"></script>
 </html>
