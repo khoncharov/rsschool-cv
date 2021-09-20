@@ -25,6 +25,7 @@
 html {
   font-family: var(--font-stack);
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -74,6 +75,71 @@ ul {
   margin-left: 14px;
 }
 
+/* Menu btn */
+.menu-btn-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  padding-left: 6px;
+  height: 40px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Header */
+
+.header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-white);
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 70px;
+  background-color: var(--background-dark-blue);
+  padding-top: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-link:hover {
+  color: var(--primary-yellow);
+}
+
 /* CV content */
 
 .cv-content-container {
@@ -112,7 +178,7 @@ ul {
 /* Footer */
 
 .footer {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-white);
   margin: 0 auto;
@@ -142,6 +208,11 @@ ul {
 
 /* Wide screen */
 @media screen and (min-width: 960px) {
+  /* Menu btn */
+  .menu-btn-container {
+    display: none;
+  }
+
   /* CV containers */
 
   .cv-container {
@@ -224,12 +295,19 @@ ul {
 
 /* Tablet screen */
 @media print, screen and (min-width: 640px) and (max-width: 960px) {
+  body {
+    padding: 0;
+  }
+
+  /* Header */
+  .header {
+    display: none;
+  }
+
   /* CV containers */
 
   .cv-container {
     margin: 0 auto;
-    max-width: 960px;
-    min-width: 640px;
     height: auto;
     background-color: var(--background-white);
     font-size: 1.8rem;
@@ -296,11 +374,19 @@ ul {
 
 /* Mobile screen */
 @media print, screen and (max-width: 640px) {
+  body {
+    padding: 0;
+  }
+
+  /* Header */
+  .header {
+    display: none;
+  }
+
   /* CV containers */
 
   .cv-container {
     margin: 0 auto;
-    max-width: 640px;
     min-width: 320px;
     height: auto;
     background-color: var(--background-white);
@@ -369,12 +455,16 @@ ul {
   }
 
   h1 {
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     font-size: 2.8rem;
   }
 
   .footer {
     padding: 25px;
+  }
+
+  .profile-photo {
+    margin-top: 0px;
   }
 }
