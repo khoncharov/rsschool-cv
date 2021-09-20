@@ -11,15 +11,56 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <main class="cv-container">
-      <!-- CV content -->
-      <div class="cv-content-container">
-        <h2>Konstantin Honcharov</h2>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="menu-list">
+          <li><a class="menu-link" href="#id-summary">Summary</a></li>
+          <li><a class="menu-link" href="#id-about-me">About me</a></li>
+          <li><a class="menu-link" href="#id-education">Education</a></li>
+          <li><a class="menu-link" href="#id-experience">Experience</a></li>
+          <li><a class="menu-link" href="#id-skills">Skills</a></li>
+          <li><a class="menu-link" href="#id-contacts">Contacts</a></li>
+          <li><a class="menu-link" href="#id-languages">Languages</a></li>
+          <li><a class="menu-link" href="#id-code-example">Code example</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <h3>About myself</h3>
+    <main class="cv-container">
+      <!-- Menu -->
+      <div class="menu-btn-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="sidenav">
+        <a class="mob-menu-link" href="#id-summary">Summary</a>
+        <a class="mob-menu-link" href="#id-about-me">About&nbsp;me</a>
+        <a class="mob-menu-link" href="#id-education">Education</a>
+        <a class="mob-menu-link" href="#id-experience">Experience</a>
+        <a class="mob-menu-link" href="#id-skills">Skills</a>
+        <a class="mob-menu-link" href="#id-contacts">Contacts</a>
+        <a class="mob-menu-link" href="#id-languages">Languages</a>
+        <a class="mob-menu-link" href="#id-code-example"> Code&nbsp;example </a>
+      </div>
+      <!-- Content -->
+      <article class="grid-fullname">
+        <h1>Konstantin Honcharov</h1>
+      </article>
+
+      <article class="grid-about">
+        <h3 id="id-about-me">About me</h3>
         <hr />
         <p>
           For 14 years I worked as a commercial vehicle design engeneer at OJSC MAZ. My
@@ -35,8 +76,10 @@
           Currently I’m studying on Front-end courses. For me frontend is an opportunity
           to change my profession and expand my capabilities as an engineer.
         </p>
+      </article>
 
-        <h3>Education</h3>
+      <article class="grid-education">
+        <h3 id="id-education">Education</h3>
         <hr />
         <ul>
           <li>
@@ -57,8 +100,10 @@
             course <span class="additional-info">(LeverX 2021)</span>
           </li>
         </ul>
+      </article>
 
-        <h3>Experience</h3>
+      <article class="grid-experience">
+        <h3 id="id-experience">Experience</h3>
         <hr />
         <ul>
           <li>
@@ -74,31 +119,38 @@
             <span class="additional-info">(one project, remote job)</span>
           </li>
         </ul>
+      </article>
 
-        <h3>Code Example</h3>
+      <article class="grid-code">
+        <h3 id="id-code-example">Code Example</h3>
         <hr />
         <p>
           Count characters in a string. If you have a string like <kbd>aba</kbd>, then the
           result should be <kbd>{'a': 2, 'b': 1}</kbd>.
         </p>
         <div class="code-container">
-          <pre>
+          <!-- lib: "highlight.js" -->
+          <pre><code class="language-js">
 function count(string) {
   return string.split('').reduce((res, item) => {
-    res[item] ? res[item]++ : res[item] = 1 return res
+    res[item] ? res[item]++ : res[item] = 1
+    return res
   }, {})
 }
-          </pre>
+            </code></pre>
         </div>
-      </div>
-      <!-- Side column, additional info -->
-      <div class="cv-side-column">
+      </article>
+
+      <figure class="grid-photo">
         <img
           class="profile-photo"
           src="./images/profile-photo-320px-f.png"
           alt="Profile photo"
         />
-        <h3>Summary</h3>
+      </figure>
+
+      <article class="grid-summary">
+        <h3 id="id-summary">Summary</h3>
         <hr />
         <ul>
           <li>
@@ -108,8 +160,10 @@ function count(string) {
           </li>
           <li>Frontend developer<br /><span class="additional-info">(Beginner)</span></li>
         </ul>
+      </article>
 
-        <h3>Contacts</h3>
+      <article class="grid-contacts">
+        <h3 id="id-contacts">Contacts</h3>
         <hr />
         <ul>
           <li>Location: Minsk, Belarus</li>
@@ -131,8 +185,10 @@ function count(string) {
             >
           </li>
         </ul>
+      </article>
 
-        <h3>Skills</h3>
+      <article class="grid-skills">
+        <h3 id="id-skills">Skills</h3>
         <hr />
         <ul>
           <li>CAD, CAE software</li>
@@ -143,14 +199,17 @@ function count(string) {
           <li>HTML, CSS, JS <span class="additional-info">(Basic)</span></li>
           <li>React, Redux, Webpack <span class="additional-info">(Basic)</span></li>
         </ul>
+      </article>
 
-        <h3>Languages</h3>
+      <article class="grid-lang">
+        <h3 id="id-languages">Languages</h3>
         <hr />
         <ul>
           <li>Russian (native)</li>
           <li>English (B1+)</li>
         </ul>
-      </div>
+      </article>
+      <div class="grid-background"></div>
     </main>
     <footer class="footer">
       <a
@@ -171,5 +230,6 @@ function count(string) {
       </a>
       <p class="creation-year" title="CV creation year">2021</p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
