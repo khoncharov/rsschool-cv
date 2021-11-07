@@ -127,9 +127,9 @@ ul {
   height: 70px;
   background-color: var(--background-dark-blue);
   padding-top: 20px;
-  /* position: sticky;
+  position: sticky;
   top: 0px;
-  z-index: 10; */
+  z-index: 10;
 }
 
 /* Wide screen menu */
@@ -146,6 +146,7 @@ ul {
 .menu-link {
   text-decoration: none;
   color: var(--text-light3);
+  transition: color 0.2s;
 }
 
 .menu-link:hover {
@@ -266,6 +267,17 @@ ul {
 
   .sidenav {
     display: none;
+  }
+
+  #id-summary,
+  #id-about-me,
+  #id-education,
+  #id-experience,
+  #id-skills,
+  #id-contacts,
+  #id-languages,
+  #id-code-example {
+    scroll-margin-top: 75px;
   }
 
   /* CV containers */
